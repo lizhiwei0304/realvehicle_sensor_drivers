@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <arg name="port_name" default="/dev/ttyUSB0"/>
-    <arg name="baud_rate" default="115200"/>
-    <include file="$(find gnss_base)/launch/gnss_base.launch">
-        <arg name="port_name" value="$(arg port_name)"/>
-        <arg name="baud_rate" value="$(arg baud_rate)"/>
-    </include>
-</launch>

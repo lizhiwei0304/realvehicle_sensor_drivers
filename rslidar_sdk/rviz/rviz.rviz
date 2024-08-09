@@ -64,7 +64,7 @@ Visualization Manager:
       Size (Pixels): 1.5
       Size (m): 0.10000000149011612
       Style: Squares
-      Topic: /vehicle0/rslidar_points
+      Topic: /rslidar_points
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true

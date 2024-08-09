@@ -1,9 +1,0 @@
-<?xml version="1.0"?>
-<launch>
-    <arg name="port_name" default="/dev/gps"/>
-    <arg name="baud_rate" default="115200"/>
-    <node name="gnss_base_node" pkg="gnss_base" type="gnss_base_node" output="screen">
-        <param name="port_name" type="string" value="$(arg port_name)"/>
-        <param name="baud_rate" value="$(arg baud_rate)"/>
-    </node>
-</launch>
