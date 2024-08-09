@@ -1,0 +1,26 @@
+# ROS-standard
+IMU: { topic: /vehicle2/gps/imu, frame_id: gps }
+GPSFix: { topic: /vehicle2/gps/gps, frame_id: gps }
+NavSatFix: { topic: /vehicle2/gps/fix, frame_id: gps }
+RAWIMU: { topic: /vehicle2/imu/data_raw, frame_id: imu_link }
+Odometry: { topic: /vehicle2/novatel/oem7/odom, frame_id: odom }
+OdometryOrigin: { topic: /odom_origin, frame_id: odom }
+
+# Oem7-specific
+Oem7RawMsg:
+  { topic: /vehicle2/novatel/oem7/oem7raw, frame_id: gps, queue_size: "200" }
+BESTPOS: { topic: /vehicle2/novatel/oem7/bestpos, frame_id: gps }
+BESTUTM: { topic: /vehicle2/novatel/oem7/bestutm, frame_id: gps }
+BESTVEL: { topic: /vehicle2/novatel/oem7/bestvel, frame_id: gps }
+CORRIMU: { topic: /vehicle2/novatel/oem7/corrimu, frame_id: gps }
+HEADING2: { topic: /vehicle2/novatel/oem7/heading2, frame_id: gps }
+INSPVA: { topic: /vehicle2/novatel/oem7/inspva, frame_id: gps }
+INSPVAX:
+  { topic: /vehicle2/novatel/oem7/inspvax, frame_id: gps, queue_size: "10" }
+INSSTDEV:
+  { topic: /vehicle2/novatel/oem7/insstdev, frame_id: gps, queue_size: "10" }
+INSCONFIG:
+  { topic: /vehicle2/novatel/oem7/insconfig, frame_id: gps, queue_size: "10" }
+RXSTATUS:
+  { topic: /vehicle2/novatel/oem7/rxstatus, frame_id: gps, queue_size: "10" }
+TIME: { topic: /vehicle2/novatel/oem7/time, frame_id: gps }
